@@ -5,4 +5,4 @@
 (defn start-repl []
   (cemerick.piggieback/cljs-repl
     :repl-env (weasel.repl.websocket/repl-env
-                :ip "0.0.0.0" :port 9001)))
+                :ip "127.0.0.1" :port 9001)))

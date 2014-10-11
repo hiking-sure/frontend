@@ -5,9 +5,9 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.1.8"]
 
-                 [org.clojure/clojurescript "0.0-2268"]
+                 [org.clojure/clojurescript "0.0-2311"]
                  [com.cemerick/piggieback "0.1.3"]
-                 [weasel "0.3.0"]]
+                 [weasel "0.4.0-SNAPSHOT"]]
 
   :plugins [[lein-cljsbuild "1.0.3"]
             [lein-ring "0.8.11"]]
@@ -25,8 +25,8 @@
       :dev
         {:source-paths ["src/cljs"]
          :compiler     {
-           :output-to     "target/cljsout/public/js/frontend.js"
-           :output-dir    "target/cljsout/public/js"
+           :output-to     "resources/public/js/frontend.js"
+           :output-dir    "resources/public/js"
            :optimizations :whitespace
            ;:source-map    "target/cljsout/public/js/frontend.js.map"
            }}}})
